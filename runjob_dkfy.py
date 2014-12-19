@@ -11,7 +11,7 @@ import subprocess
 import sys
 
 WORKFLOW_SEARCH=r"Workflow_Bundle_SangerPancancerCgpCnIndelSnvStr_1.0.2_SeqWare_1.1.0-alpha.5"
-WORKFLOW_SWID_SEARCH="SangerPancancerCgpCnIndelSnvStr\s+Version\s+.\s+1.0.2\s+Creation Date\s+.*\s+?SeqWare Accession\s+.\s(\d)"
+WORKFLOW_SWID_SEARCH="SangerPancancerCgpCnIndelSnvStr\s+Version\s+.\s+1.0.2\s+Creation Date\s+.*\s+?SeqWare Accession\s+.\s(\d+)"
 
 SCHEDULE_WORKFLOW_COMMAND="seqware workflow schedule --accession"
 INI_FILE_PATH="--ini /mnt/home/seqware/ini/20141218.pilot.1.0.2.dkfz/"
